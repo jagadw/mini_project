@@ -8,14 +8,14 @@ Dokumentasi lebih lengkap ada pada bagian informasi didalam aplikasi.
 
 Kredit:
 
-Laravel
+Laravel<br>
 Laravel adalah framework PHP yang dirancang untuk pengembangan aplikasi web yang elegan dan efisien. Untuk informasi lebih lanjut, kunjungi laravel.com.
 
-Node.js
+Node.js<br>
 Node.js adalah runtime JavaScript yang memungkinkan Anda menjalankan JavaScript di server. Untuk informasi lebih lanjut, kunjungi nodejs.org.
 
-Kontribusi
+Kontribusi<br>
 Terima kasih kepada semua kontributor yang telah berkontribusi pada proyek ini. Jika Anda ingin berkontribusi, silakan lihat panduan kontribusi.
 
-Lisensi
+Lisensi<br>
 Proyek ini dilisensikan di bawah MIT License.
