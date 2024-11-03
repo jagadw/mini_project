@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/items', function () {
-    return view('items.index');
-});
-Route::get('/home', function () {
-    return view('home');
+Route::middleware(['auth'])->group(function () {
+
+    Route::resource('items', ItemController::class);
+    Route::get('/documentation', function () {
+        return view('documentation');
+    });
+    Route::post('/items', [ItemController::class, 'store'])->name('items.store');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
